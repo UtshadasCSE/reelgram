@@ -21,6 +21,7 @@ export async function connectionToDatabase() {
   // if not connction is cached then connect db
   if (!cached.promise) {
     const opts = {
+      dbName: "Reelgram",
       bufferCommands: true,
       maxPoolSize: 10,
     };
